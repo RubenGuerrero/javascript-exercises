@@ -1,5 +1,11 @@
 {
   "name": "javascript-exercises",
   "description": "Collection of JavaScript exercises great for preparing for an interview",
-  "author": "appalaszynski"
+  "author": "appalaszynski",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^23.2.0"
+  }
 }

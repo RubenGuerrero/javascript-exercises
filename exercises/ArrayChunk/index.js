@@ -13,7 +13,11 @@
  */
 
 function chunk(array, size) {
-
+    const newArray = [];
+    while(array.length){
+        newArray.push(array.splice(0, size));
+    }
+    return newArray;
 }
 
 module.exports = chunk;

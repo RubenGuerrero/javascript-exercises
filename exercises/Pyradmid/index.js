@@ -16,8 +16,15 @@
  *              '#####'
  */
 
-const pyramid = (n) => {
-
-}
+const pyradmid = h => (
+    new Array(h)
+        .fill('')
+        .map((_, key) => (
+            new Array(h + key)
+                .fill('#')
+                .fill('-', 0, h - (key + 1))
+        ).join('')
+        ).join('\n')
+);
 
 module.exports = pyradmid;

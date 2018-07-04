@@ -13,7 +13,9 @@
  */
 
 function Queue() {
-
-}
+    this.queued = [];
+    this.add = n => this.queued.push(n);
+    this.remove = () => this.queued.splice(0, 1)[0];
+};
 
 module.exports = Queue;

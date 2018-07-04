@@ -17,7 +17,18 @@
  */
 
 function fizzBuzz(n) {
-
+    return new Array(n).fill().map((_, key) => {
+        const n = key+1;
+        if((n % 3 === 0) && (n % 5 === 0)){
+            console.log('fizzbuzz');
+        } else if(n % 3 === 0){
+            console.log('fizz');
+        } else if(n % 5 === 0){
+            console.log('buzz');
+        } else {
+            console.log(n);
+        }
+    });
 }
 
 module.exports = fizzBuzz;

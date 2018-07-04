@@ -13,7 +13,9 @@
  */
 
 const reverse = (int) => {
-  
+    return parseInt(`
+        ${Math.sign(int) === -1 ? '-' : ''}${int.toString().split('').reverse().join('')}
+    `);
 }
 
 module.exports = reverse;

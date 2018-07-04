@@ -20,7 +20,16 @@
  */
 
 function steps(n) {
-
+    return (
+        new Array(n).fill(' ').map((_, key) => {
+            console.log(
+                new Array(n)
+                    .fill(' ')
+                    .fill('#', 0, key+1)
+                    .join('')
+            )
+        })
+    );
 }
 
 module.exports = steps;

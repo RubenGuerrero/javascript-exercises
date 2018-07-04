@@ -11,8 +11,12 @@
  * fib(15) === 610
  */
 
-const fib = (n) => {
-
-}
+const fib = i => {
+    if (i === 0 || i === 1) {
+      return i;
+    } else {
+      return fib(i - 2) + fib(i - 1);
+    }
+  }
 
 module.exports = fib;

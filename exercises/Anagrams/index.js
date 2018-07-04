@@ -12,8 +12,10 @@
  * anagrams('Hi there', 'Bye there') === false
  */
 
+const convertString = str => str.replace(/[^\w]/g, '').toLowerCase().split('').sort().join('');
+
 function anagrams(stringA, stringB) {
-   
+  return convertString(stringA) === convertString(stringB);
 }
 
 module.exports = anagrams;
